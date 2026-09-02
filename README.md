@@ -8,10 +8,10 @@ https://ridewithgps.com/routes/56878305
 Focussed dirt/ small roads bikepacking route to visit key birding spots in the western and central Andes. The route I created does a figure 8 starting and ending in Manizales, visiting humid lowland rainforest, premontane and Andean cloud forests, high-elevation Andean forest, páramos, wetlands, river valleys, coffee, and agricultural landscapes.
 
 ## The Code:
-Takes the route above and overlays endemic birds of Colombia + a few other special ones. As a novice birder this helps me visualize how special this region of Colombia/ the world is. Check out the [map](https://cem8301.github.io/avista-aves-andes/)!
+Takes the route above and overlays endemic birds of Colombia + a few other special ones. As a novice birder this helps me visualize how special this region of Colombia/ the world is. Check out the [map](https://cem8301.github.io/avista-aves-andinas/)!
 
 ## Why Colombia is cool:
-Colombia is the second most biodiverse country on earth (after Brazil) with the highest number of bird and orchid species. But really, South America is a biodiversity hotspot, so this route is just a place to start exploring. In Colombia, there are about 1960/ 10000 known global bird species, 96 endemics, and half of the world's 330 hummingbirds. This is partly due to the huge array of natural regions: three Andean mountain chains separated by the Cauca and Magdalena rivers, Santa Marta mountains, paramos, cloud forest, tropical rain forests, llanos, wetlands, deserts, and islands.
+Colombia is one of the most biodiverse country on earth with the highest number of bird and orchid species. But really, South America is a biodiversity hotspot, so this route is just a place to start exploring. In Colombia, there are about 1960/ 10000 known global bird species, about 86 endemics, and half of the world's 330 hummingbirds. This is partly due to the huge array of natural regions: three Andean mountain chains separated by the Cauca and Magdalena rivers, Santa Marta mountains, paramos, cloud forest, tropical rain forests, llanos, wetlands, deserts, and islands.
 
 ## Key birding spots:
 My birding guide in Manizales helped me put this list together. I specifically asked for interesting places to visit that were cyclist and budget friendly. I did not visit every place, but think this gives a nice comprehensive list. There are even more spots to stop as inclined.
