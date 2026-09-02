@@ -1,0 +1,293 @@
+#import io
+#import requests
+#from PIL import Image
+#import branca
+#from branca.element import Element
+#import xyzservices.providers as xyz
+#from flatten_dict import flatten
+#from folium.plugins import TimestampedGeoJson
+#from folium.plugins import FeatureGroupSubGroup
+#from branca.element import MacroElement
+#from jinja2 import Template
+#from folium.plugins import MarkerCluster
+#from folium.plugins import GroupedLayerControl
+#import polyline
+
+#!/usr/bin/env python3.13.13
+import configparser
+import json
+from pathlib import Path
+
+import folium
+from folium.plugins import HeatMap
+import gpxpy.gpx
+import pandas as pd
+from pygbif import occurrences as occ
+from pygbif import species
+
+
+
+class AvistaAvesAndinas:
+    def __init__(self, limit_bird_sightings=500,
+        config='', limit_feature_groups=0):
+        self.pwd = Path.cwd()
+        self.config = configparser.ConfigParser()
+        if not config:
+            print('Please supply a config file name')
+        self.config.read(f'{self.pwd}/{config}')
+        birds_csv = self.config.get('path', 'birds_csv')
+        df = pd.read_csv(f'{self.pwd}/{birds_csv}')
+        if limit_feature_groups:
+            df = df.head(limit_feature_groups)
+        self.limit_bird_sightings = \
+            limit_bird_sightings
+        self.layer_mapping = {}
+        self.layer_index = 0
+        self.m = folium.Map(
+            location=json.loads(
+                self.config.get('map', 'location')),
+            zoom_start=self.config.getint(
+                'map', 'zoom'),
+            tiles="OpenStreetMap",
+            control=False)
+        self.map_macro_id = self.m.get_name()
+        self.birds_dict = (
+            df.set_index("scientific_name")[
+            ["common_name", "feature_group"]
+            ].to_dict(orient="index"))
+        self.structured_data = \
+            {inner_dict["feature_group"]: {} 
+            for inner_dict in self.birds_dict.values()
+            if "feature_group" in inner_dict}
+        gpx = self.config.get('path', 'gpx')
+        self.gpx_file_path = f'{self.pwd}/{gpx}'
+            
+    def run(self, output_name='birds'):
+        self.add_gpx()
+        self.get_data()
+        self.add_data_layers()
+        self.add_custom_legend()
+        self.m.save(f'{self.pwd}/{output_name}.html')
+        
+    def new_group(self, name):
+        return(folium.FeatureGroup(
+            name=name,
+            overlay=False,
+            control=True).add_to(self.m))
+        
+    def add_gpx(self):
+        with open(self.gpx_file_path, "r") as gpx_file:
+            gpx = gpxpy.parse(gpx_file)
+        points = []
+        for track in gpx.tracks:
+            for segment in track.segments:
+                for point in segment.points:
+                    points.append((
+                    point.latitude, point.longitude))
+                    
+        folium.PolyLine(
+            locations=points,
+            color="blue",
+            weight=4,
+            opacity=0.8).add_to(self.m)
+     
+    def get_data(self):
+        for key, value in self.birds_dict.items():
+            scientific_name = key
+            common_name = value['common_name']
+            feature_group = value['feature_group']
+            taxon_info = species.name_backbone(
+                scientificName=scientific_name,
+                kingdom="animals")
+            taxon_key = taxon_info.get(
+                'usage',{}).get('key')
+            print(common_name, taxon_key)
+            raw_data = occ.search(
+                taxonKey=taxon_key,
+                hasCoordinate=True,
+                limit=self.limit_bird_sightings)
+            results = raw_data.get('results')
+            lon_list = [obs['decimalLongitude'
+                ] for obs in results]
+            lat_list = [obs['decimalLatitude'
+                ] for obs in results]
+            points = list(zip(lat_list, lon_list))
+            self.structured_data[feature_group
+                ][common_name] = points
+            
+    def add_data_layers(self):
+        for cat_name, sub_dict in \
+            self.structured_data.items():
+            for heat_name, coords in sub_dict.items():
+                layer_id = \
+                    f"heatmap_layer_{self.layer_index}"
+                heatmap_layer = \
+                    folium.FeatureGroup(
+                        name=heat_name, show=False)
+                HeatMap(coords, radius=25, blur=15
+                    ).add_to(heatmap_layer)
+                heatmap_layer.add_to(self.m)
+                self.layer_mapping[
+                    f"{cat_name} - {heat_name}"] = {
+                    "id": layer_id,
+                    "obj_ref": heatmap_layer.get_name()
+                }
+                self.layer_index += 1
+    
+    def add_custom_legend(self):
+        legend_html = self.get_custom_legend()
+        css_styles = self.get_css_styles()
+        js_script = self.get_js_script()
+        self.m.get_root().html.add_child(
+            folium.Element(
+            css_styles + legend_html + js_script))               
+    def get_custom_legend(self):
+        legend_html =  """
+        <div class="custom-legend">
+            <h4>Map Layers</h4>
+            <button class="scroll-btn" onclick="scrollLegend(-100)">▲ Scroll Up</button>
+            <div id="legendContainer" class="legend-scroll-container">
+        """
+        for cat_name, sub_dict in self.structured_data.items():
+            legend_html += f'<div class="category-header">{cat_name}</div>'
+            for heat_name in sub_dict.keys():
+                key = f"{cat_name} - {heat_name}"
+                layer_info = self.layer_mapping[key]
+                legend_html += f"""
+                <div class="layer-item">
+                    <input type="radio" id="{layer_info['id']}" name="global-layers" 
+                           onchange="toggleGlobalLayer('{layer_info['obj_ref']}')">
+                    <label for="{layer_info['id']}">{heat_name}</label>
+                </div>
+                """
+        legend_html += """
+            </div>
+            <button class="scroll-btn" onclick="scrollLegend(100)">▼ Scroll Down</button>
+        </div>
+        """
+        return legend_html
+        
+    def get_css_styles(self):
+        return """
+        <style>
+            .custom-legend {
+                position: fixed;
+                top: 8px; right: 8px; z-index: 9999;
+                background: white; 
+                padding: 6px 10px;                  /* Tightened outer padding */
+                border-radius: 6px; 
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+                font-family: Arial, sans-serif; 
+                font-size: 10px;                    /* Global text reduction to 10px */
+                width: 180px;                       /* Narrowed width to preserve screen view */
+                max-height: 30Nvh;
+                display: flex;
+                flex-direction: column;
+                gap: 4px;                           /* Minimized space between inner elements */
+            }
+            .custom-legend h4 { 
+                margin: 0; 
+                font-size: 11px; 
+                border-bottom: 1px solid #ddd; 
+                padding-bottom: 3px; 
+                flex-shrink: 0;
+            }
+            
+            .legend-scroll-container {
+                overflow-y: auto;
+                flex-grow: 1;
+                padding-right: 2px;
+                scroll-behavior: smooth;
+                -webkit-overflow-scrolling: touch;
+            }
+            
+            /* Compact Scroll Button Layout */
+            .scroll-btn {
+                background-color: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 3px;
+                padding: 3px;                       /* Compact padding */
+                font-size: 9px;                     /* Slightly smaller font for secondary UI */
+                font-weight: bold;
+                color: #444;
+                cursor: pointer;
+                text-align: center;
+                user-select: none;
+                flex-shrink: 0;
+            }
+            .scroll-btn:active {
+                background-color: #e0e0e0;
+            }
+        
+            /* Strict structural spacing reduction */
+            .category-header { 
+                font-weight: bold; 
+                margin-top: 5px;                    /* Reduced top margin spacing */
+                margin-bottom: 2px; 
+                color: #222; 
+                text-transform: uppercase; 
+                font-size: 9px;                     /* Scaled to match the tight look */
+                letter-spacing: 0.3px;
+            }
+            .layer-item { 
+                margin-left: 4px; 
+                margin-bottom: 1px;                 /* Flattened vertical distance */
+                display: flex; 
+                align-items: center; 
+                padding: 1px 0;                     /* Removed padding dead-zones */
+            }
+            .layer-item input { 
+                margin-right: 5px; 
+                cursor: pointer; 
+                width: 12px;                        /* Scaled radio width slightly down */
+                height: 12px;                       /* Scaled radio height slightly down */
+            }
+            .layer-item label { 
+                cursor: pointer; 
+                color: #444; 
+                user-select: none; 
+                line-height: 12px;
+            }
+        </style>
+        """
+        
+    def get_js_script(self):
+        return f"""
+        <script>
+        var totalLayers = {str([info['obj_ref'] for info in self.layer_mapping.values()])};
+        
+        function scrollLegend(amount) {{
+            var container = document.getElementById('legendContainer');
+            if (container) {{
+                container.scrollTop += amount;
+            }}
+        }}
+        
+        function toggleGlobalLayer(targetLayerName) {{
+            var targetMap = window["{self.map_macro_id}"];
+            if (targetMap) {{
+                totalLayers.forEach(function(layerName) {{
+                    var layerObj = window[layerName];
+                    if (layerObj && targetMap.hasLayer(layerObj)) {{
+                        targetMap.removeLayer(layerObj);
+                    }}
+                }});
+                
+                var activeLayerObj = window[targetLayerName];
+                if (activeLayerObj) {{
+                    targetMap.addLayer(activeLayerObj);
+                }}
+            }}
+        }}
+        </script>
+        """
+
+        
+if __name__ == "__main__":
+    AAA = AvistaAvesAndinas(
+        config='colombia_config.ini',
+        limit_bird_sightings=1,
+        limit_feature_groups=3
+        )
+    AAA.run(output_name='colombia_birds_test')
+        

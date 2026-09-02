@@ -1,0 +1,178 @@
+Row #,Taxon Order,Category,Common Name,Scientific Name,Count,Location,S/P,Date,LocID,SubID,Exotic,Countable
+1,17320,species,Pale-edged Flycatcher,Myiarchus cephalotes,1,Cascadas de Santa Rita,CO-QUI,29 Aug 2026,L24451230,S387994721,,1
+2,16746,species,Torrent Tyrannulet,Serpophaga cinerea,1,Cascadas de Santa Rita,CO-QUI,29 Aug 2026,L24451230,S387994721,,1
+3,16048,species,White-winged Becard,Pachyramphus polychopterus,2,Cascadas de Santa Rita,CO-QUI,29 Aug 2026,L24451230,S387994721,,1
+4,10818,species,Red-headed Barbet,Eubucco bourcierii,1,Cascadas de Santa Rita,CO-QUI,29 Aug 2026,L24451230,S387994721,,1
+5,7484,species,Buff-necked Ibis,Theristicus caudatus,2,Cascadas de Santa Rita,CO-QUI,29 Aug 2026,L24451230,S387994721,,1
+6,3026,species,Smooth-billed Ani,Crotophaga ani,2,Cascadas de Santa Rita,CO-QUI,29 Aug 2026,L24451230,S387994721,,1
+7,2268,species,Ruddy Ground Dove,Columbina talpacoti,4,Cascadas de Santa Rita,CO-QUI,29 Aug 2026,L24451230,S387994721,,1
+8,34491,species,Crested Ant-Tanager,Driophlox cristata,2,SFF Otún Quimbaya,CO-RIS,25 Aug 2026,L1433708,S386928180,,1
+9,27674,species,White-capped Dipper,Cinclus leucocephalus,1,SFF Otún Quimbaya,CO-RIS,25 Aug 2026,L1433708,S386928180,,1
+10,15911,species,Red-ruffed Fruitcrow,Pyroderus scutatus,1,SFF Otún Quimbaya,CO-RIS,25 Aug 2026,L1433708,S386928180,,1
+11,916,species,Cauca Guan,Penelope perspicax,7,SFF Otún Quimbaya,CO-RIS,25 Aug 2026,L1433708,S386928180,,1
+12,6109,species,Noble Snipe,Gallinago nobilis,1,"Vía al Parque de los Nevados, Caldas, CO (4.869, -75.402)",CO-CAL,23 Aug 2026,L76131701,S386368464,,1
+13,7810,species,Andean Condor,Vultur gryphus,1,Hostal La Laguna,CO-CAL,22 Aug 2026,L5251533,S386368421,,1
+14,35115,species,Golden Tanager,Tangara arthus,1,Ecoparque Los Alcázares-Arenillo,CO-CAL,21 Aug 2026,L2414386,S385442159,,1
+15,34360,species,Slate-throated Redstart,Myioborus miniatus,2,Ecoparque Los Alcázares-Arenillo,CO-CAL,21 Aug 2026,L2414386,S385442159,,1
+16,16554,species,Southern Beardless-Tyrannulet,Camptostoma obsoletum,1,Ecoparque Los Alcázares-Arenillo,CO-CAL,21 Aug 2026,L2414386,S385442159,,1
+17,12974,species,Scaly-naped Amazon,Amazona mercenarius,8,Ecoparque Los Alcázares-Arenillo,CO-CAL,21 Aug 2026,L2414386,S385442159,,1
+18,35583,species,Yellow-bellied Seedeater,Sporophila nigricollis,1,Hacienda Venecia,CO-CAL,20 Aug 2026,L7828681,S385151298,,1
+19,28101,species,Tropical Mockingbird,Mimus gilvus,1,Hacienda Venecia,CO-CAL,20 Aug 2026,L7828681,S385151298,,1
+20,27209,species,Southern House Wren,Troglodytes musculus,3,Hacienda Venecia,CO-CAL,20 Aug 2026,L7828681,S385151298,,1
+21,13536,species,Black-crowned Antshrike,Thamnophilus atrinucha,1,Hacienda Venecia,CO-CAL,20 Aug 2026,L7828681,S385151298,,1
+22,13518,species,Bar-crested Antshrike,Thamnophilus multistriatus,1,Hacienda Venecia,CO-CAL,20 Aug 2026,L7828681,S385151298,,1
+23,16998,species,Black Phoebe,Sayornis nigricans,,"Unnamed Road, Caldas",CO-CAL,19 Aug 2026,L75898099,S384999825,,1
+24,35692,species,Yellow-faced Grassquit,Tiaris olivaceus,1,Fantasmas del bosque birding,CO-RIS,18 Aug 2026,L27837084,S384683308,,1
+25,35644,species,Bananaquit,Coereba flaveola,1,Fantasmas del bosque birding,CO-RIS,18 Aug 2026,L27837084,S384683308,,1
+26,35027,species,Blue-necked Tanager,Stilpnia cyanicollis,1,Fantasmas del bosque birding,CO-RIS,18 Aug 2026,L27837084,S384683308,,1
+27,33436,species,White-naped Brushfinch,Atlapetes albinucha,1,Fantasmas del bosque birding,CO-RIS,18 Aug 2026,L27837084,S384683308,,1
+28,33081,species,Chestnut-capped Brushfinch,Arremon brunneinucha,1,Fantasmas del bosque birding,CO-RIS,18 Aug 2026,L27837084,S384683308,,1
+29,27612,species,Gray-breasted Wood-Wren,Henicorhina leucophrys,2,Fantasmas del bosque birding,CO-RIS,18 Aug 2026,L27837084,S384683308,,1
+30,27456,species,Whiskered Wren,Pheugopedius mystacalis,1,Fantasmas del bosque birding,CO-RIS,18 Aug 2026,L27837084,S384683308,,1
+31,14449,species,Tatama Tapaculo,Scytalopus alvarezlopezi,1,Fantasmas del bosque birding,CO-RIS,18 Aug 2026,L27837084,S384683308,,1
+32,14258,species,Yellow-breasted Antpitta,Grallaria flavotincta,1,Fantasmas del bosque birding,CO-RIS,18 Aug 2026,L27837084,S384683308,,1
+33,13905,species,Parker's Antbird,Cercomacroides parkeri,1,Fantasmas del bosque birding,CO-RIS,18 Aug 2026,L27837084,S384683308,,1
+34,13627,species,Plain Antvireo,Dysithamnus mentalis,1,Fantasmas del bosque birding,CO-RIS,18 Aug 2026,L27837084,S384683308,,1
+35,4710,species,Empress Brilliant,Heliodoxa imperatrix,1,Fantasmas del bosque birding,CO-RIS,18 Aug 2026,L27837084,S384683308,,1
+36,4706,species,Green-crowned Brilliant,Heliodoxa jacula,1,Fantasmas del bosque birding,CO-RIS,18 Aug 2026,L27837084,S384683308,,1
+37,4343,species,White-throated Daggerbill,Schistes albogularis,1,Fantasmas del bosque birding,CO-RIS,18 Aug 2026,L27837084,S384683308,,1
+38,4265,species,Tawny-bellied Hermit,Phaethornis syrmatophorus,2,Fantasmas del bosque birding,CO-RIS,18 Aug 2026,L27837084,S384683308,,1
+39,1157,species,Chestnut Wood-Quail,Odontophorus hyperythrus,4,Fantasmas del bosque birding,CO-RIS,18 Aug 2026,L27837084,S384683308,,1
+40,35789,species,Black-winged Saltator,Saltator atripennis,1,"Unnamed Road, Risaralda, CO (5.16, -75.885)",CO-RIS,17 Aug 2026,L75814186,S384505947,,1
+41,35188,species,Green Honeycreeper,Chlorophanes spiza,1,"Unnamed Road, Risaralda, CO (5.16, -75.885)",CO-RIS,17 Aug 2026,L75814186,S384505947,,1
+42,35020,species,Scrub Tanager,Stilpnia vitriolina,1,"Unnamed Road, Risaralda, CO (5.16, -75.885)",CO-RIS,17 Aug 2026,L75814186,S384505947,,1
+43,34270,species,Three-striped Warbler,Basileuterus tristriatus,1,"Unnamed Road, Risaralda, CO (5.16, -75.885)",CO-RIS,17 Aug 2026,L75814186,S384505947,,1
+44,15969,species,Masked Tityra,Tityra semifasciata,2,"Unnamed Road, Risaralda, CO (5.16, -75.885)",CO-RIS,17 Aug 2026,L75814186,S384505947,,1
+45,10433,species,Moustached Puffbird,Malacoptila mystacalis,1,"Unnamed Road, Risaralda, CO (5.16, -75.885)",CO-RIS,17 Aug 2026,L75814186,S384505947,,1
+46,4914,species,Western Emerald,Chlorostilbon melanorhynchus,1,"Unnamed Road, Risaralda, CO (5.16, -75.885)",CO-RIS,17 Aug 2026,L75814186,S384505947,,1
+47,12895,species,Bronze-winged Parrot,Pionus chalcopterus,2,"Riosucio - Jardin, Caldas, CO (5.419, -75.741)",CO-CAL,16 Aug 2026,L75814193,S384506038,,1
+48,13189,species,Scarlet-fronted Parakeet,Psittacara wagleri,2,RN La Cueva del Esplendor,CO-ANT,14 Aug 2026,L4681373,S383362706,,1
+49,34957,species,Palm Tanager,Thraupis palmarum,1,Reserva Los Guácharos,CO-ANT,13 Aug 2026,L41970387,S383035875,,1
+50,33900,species,Red-bellied Grackle,Hypopyrrhus pyrohypogaster,6,Reserva Los Guácharos,CO-ANT,13 Aug 2026,L41970387,S383035875,,1
+51,15900,species,Andean Cock-of-the-rock,Rupicola peruvianus,5,Reserva Los Guácharos,CO-ANT,13 Aug 2026,L41970387,S383035875,,1
+52,14921,species,Streak-headed Woodcreeper,Lepidocolaptes souleyetii,1,La Oculta Lodge,CO-ANT,11 Aug 2026,L7358296,S382894376,,1
+53,11852,species,Golden-olive Woodpecker,Colaptes rubiginosus,2,La Oculta Lodge,CO-ANT,11 Aug 2026,L7358296,S382894376,,1
+54,11171,species,Red-crowned Woodpecker,Melanerpes rubricapillus,1,La Oculta Lodge,CO-ANT,11 Aug 2026,L7358296,S382894376,,1
+55,8449,species,White-tailed Hawk,Geranoaetus albicaudatus,2,La Oculta Lodge,CO-ANT,11 Aug 2026,L7358296,S382894376,,1
+56,34796,species,Flame-rumped Tanager,Ramphocelus flammigerus,1,"San Felix, Salamina, Caldas",CO-CAL,10 Aug 2026,L16626902,S382893632,,1
+57,33889,species,Carib Grackle,Quiscalus lugubris,1,"Carrera 8, Salamina, Caldas, CO (5.404, -75.486)",CO-CAL,09 Aug 2026,L75326199,S381695130,,1
+58,12889,species,Blue-headed Parrot,Pionus menstruus,1,"Carrera 8, Salamina, Caldas, CO (5.404, -75.486)",CO-CAL,09 Aug 2026,L75326199,S381695130,,1
+59,1853,species,Rock Pigeon,Columba livia,1,"Carrera 8, Salamina, Caldas, CO (5.404, -75.486)",CO-CAL,09 Aug 2026,L75326199,S381695130,N,1
+60,961,species,Colombian Chachalaca,Ortalis columbiana,5,"Carrera 8, Salamina, Caldas, CO (5.404, -75.486)",CO-CAL,09 Aug 2026,L75326199,S381695130,,1
+61,35483,species,Grassland Yellow-Finch,Sicalis luteola,3,"Unnamed Road, Caldas, CO (5.391, -75.351)",CO-CAL,08 Aug 2026,L75326221,S381695246,,1
+62,13162,species,Yellow-eared Parrot,Ognorhynchus icterotis,2,"8-08 Avenida La Sultana, Manizales, Caldas",CO-CAL,07 Aug 2026,L74940663,S381695326,,1
+63,24116,species,Southern Rough-winged Swallow,Stelgidopteryx ruficollis,11,"8-08 Avenida La Sultana, Manizales, Caldas",CO-CAL,06 Aug 2026,L74940663,S381695402,,1
+64,17423,species,Golden-bellied Flycatcher,Myiodynastes hemichrysus,3,"8-08 Avenida La Sultana, Manizales, Caldas",CO-CAL,06 Aug 2026,L74940663,S381695402,,1
+65,10845,species,Southern Emerald-Toucanet,Aulacorhynchus albivitta,2,"8-08 Avenida La Sultana, Manizales, Caldas",CO-CAL,06 Aug 2026,L74940663,S381695402,,1
+66,5896,species,Southern Lapwing,Vanellus chilensis,4,"8-08 Avenida La Sultana, Manizales, Caldas",CO-CAL,06 Aug 2026,L74940663,S381695402,,1
+67,7478,species,Bare-faced Ibis,Phimosus infuscatus,,"57C-32 Carrera 8A2, MANIZALEZ, Caldas",CO-CAL,06 Aug 2026,L75113982,S380504053,,1
+68,33694,species,Yellow-backed Oriole,Icterus chrysater,,"61b-1 Carrera 15b, Manizales, Caldas",CO-CAL,04 Aug 2026,L75007548,S379902693,,1
+69,35845,species,Masked Saltator,Saltator cinctus,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+70,35389,species,Slaty Finch,Haplospiza rustica,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+71,35041,species,Beryl-spangled Tanager,Tangara nigroviridis,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+72,35036,species,Blue-and-black Tanager,Tangara vassorii,4,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+73,34917,species,Fawn-breasted Tanager,Pipraeidea melanonota,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+74,34889,species,Blue-winged Mountain Tanager,Anisognathus somptuosus,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+75,34334,species,Russet-crowned Warbler,Myiothlypis coronata,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+76,34291,species,Citrine Warbler,Myiothlypis luteoviridis,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+77,33041,species,Gray-browed Brushfinch,Arremon assimilis,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+78,32631,species,Yellow-bellied Siskin,Spinus xanthogastrus,4,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+79,28274,species,Slaty-backed Nightingale-Thrush,Catharus fuscater,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+80,27576,species,Sharpe's Wren,Cinnycerthia olivascens,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+81,24128,species,Blue-and-white Swallow,Pygochelidon cyanoleuca,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+82,19253,species,Brown-capped Vireo,Vireo leucophrys,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+83,17189,species,Chestnut-bellied Chat-Tyrant,Ochthoeca cinnamomeiventris,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+84,16806,species,Golden-faced Tyrannulet,Zimmerius chrysops,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+85,16384,species,Rufous-crowned Tody-Flycatcher,Poecilotriccus ruficeps,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+86,16201,species,Streak-necked Flycatcher,Mionectes striaticollis,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+87,15849,species,Green-and-black Fruiteater,Pipreola riefferii,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+88,15635,species,Azara's Spinetail,Synallaxis azarae,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+89,15304,species,Pearled Treerunner,Margarornis squamiger,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+90,14946,species,Montane Woodcreeper,Lepidocolaptes lacrymiger,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+91,14435,species,Blackish Tapaculo,Scytalopus latrans,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+92,14290,species,Brown-banded Antpitta,Grallaria milleri,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+93,14234,species,Chestnut-crowned Antpitta,Grallaria ruficapilla,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+94,11874,species,Crimson-mantled Woodpecker,Colaptes rivolii,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+95,8430,species,Roadside Hawk,Rupornis magnirostris,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+96,7811,species,Black Vulture,Coragyps atratus,5,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+97,5130,species,Andean Emerald,Uranomitra franciae,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+98,4702,species,Fawn-breasted Brilliant,Heliodoxa rubinoides,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+99,4672,species,Buff-tailed Coronet,Boissonneaua flavescens,3,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+100,4659,species,Mountain Velvetbreast,Lafresnaya lafresnayi,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+101,4460,species,Speckled Hummingbird,Adelomyia melanogenys,2,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+102,4414,species,Tourmaline Sunangel,Heliangelus exortis,2,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+103,4359,species,Lesser Violetear,Colibri cyanotus,2,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+104,1966,species,Band-tailed Pigeon,Patagioenas fasciata,1,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+105,900,species,Andean Guan,Penelope montagnii,2,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+106,855,species,Sickle-winged Guan,Chamaepetes goudotii,2,Reserva Ecológica Río Blanco--Lodge,CO-CAL,03 Aug 2026,L1252500,S381283827,,1
+107,2400,species,Eared Dove,Zenaida auriculata,4,"Manizales-Río Blanco, Caldas, CO (5.068, -75.46)",CO-CAL,03 Aug 2026,L75326268,S381695493,,1
+108,16519,species,Cinnamon Flycatcher,Pyrrhomyias cinnamomeus,,"Vía Nevado del Ruiz, Caldas",CO-CAL,02 Aug 2026,L74872233,S379118337,,1
+109,34384,species,Golden-fronted Redstart,Myioborus ornatus,,"Vía al Parque Nacional Los Nevados, Caldas",CO-CAL,02 Aug 2026,L74844809,S379119741,,1
+110,9592,species,Masked Trogon,Trogon personatus,,"Vía al Parque Nacional Los Nevados, Caldas",CO-CAL,01 Aug 2026,L74844809,S378962747,,1
+111,10876,species,Black-billed Mountain-Toucan,Andigena nigrirostris,,"2-12 Calle 2, Murillo, Tolima",CO-TOL,30 Jul 2026,L74511039,S378162377,,1
+112,9505,species,Golden-headed Quetzal,Pharomachrus auriceps,,"2-12 Calle 2, Murillo, Tolima",CO-TOL,30 Jul 2026,L74511039,S377988142,,1
+113,28677,species,Great Thrush,Turdus fuscater,,"2-12 Calle 2, Murillo, Tolima",CO-TOL,28 Jul 2026,L74511039,S377447361,,1
+114,4667,species,Sword-billed Hummingbird,Ensifera ensifera,,"2-12 Calle 2, Murillo, Tolima",CO-TOL,28 Jul 2026,L74511039,S377421994,,1
+115,35330,species,Masked Flowerpiercer,Diglossa cyanea,,"2-12 Calle 2, Murillo, Tolima",CO-TOL,27 Jul 2026,L74511039,S377076844,,1
+116,4623,species,Collared Inca,Coeligena torquata,,"2-12 Calle 2, Murillo, Tolima",CO-TOL,27 Jul 2026,L74511039,S377074007,,1
+117,4471,species,Long-tailed Sylph,Aglaiocercus kingii,,"2-12 Calle 2, Murillo, Tolima",CO-TOL,27 Jul 2026,L74511039,S377077666,,1
+118,4354,species,Sparkling Violetear,Colibri coruscans,,"2-12 Calle 2, Murillo, Tolima",CO-TOL,27 Jul 2026,L74511039,S377068740,,1
+119,12996,species,Spectacled Parrotlet,Forpus conspicillatus,,curiti,CO-SAN,19 Jun 2026,L70621661,S359609255,,1
+120,35477,species,Saffron Finch,Sicalis flaveola,,cutiti,CO-SAN,17 Jun 2026,L70442938,S358804416,,1
+121,33613,species,Russet-backed Oropendola,Psarocolius angustifrons,,florian,CO-SAN,08 Jun 2026,L69492953,S354649547,,1
+122,35819,species,Streaked Saltator,Saltator striatipectus,,finca san luis,CO-BOY,06 Jun 2026,L69204963,S353402951,,1
+123,34820,species,Crimson-backed Tanager,Ramphocelus dimidiatus,,finca san luis,CO-BOY,06 Jun 2026,L69204963,S353445683,,1
+124,17387,species,Rusty-margined Flycatcher,Myiozetetes cayanensis,,finca san luis,CO-BOY,06 Jun 2026,L69204963,S353401780,,1
+125,16698,species,Yellow-bellied Elaenia,Elaenia flavogaster,,finca san luis,CO-BOY,06 Jun 2026,L69204963,S353475485,,1
+126,13140,species,Blue-and-yellow Macaw,Ara ararauna,,rio magdelena,CO-ANT,03 Jun 2026,L68886766,S351972193,,1
+127,9880,species,Andean Motmot,Momotus aequatorialis,,motmot,CO-ANT,02 Jun 2026,L68748794,S351323910,,1
+128,9508,species,Resplendent Quetzal,Pharomachrus mocinno,,quetzel,CR-SJ,06 May 2026,L65210492,S333776966,,1
+129,13187,species,Crimson-fronted Parakeet,Psittacara finschi,,san jose,CR-SJ,02 May 2026,L64728446,S331327367,,1
+130,11966,species,Yellow-headed Caracara,Daptrius chimachima,,caracara,CR-SJ,29 Apr 2026,L64333829,S329426995,,1
+131,11155,species,Golden-naped Woodpecker,Melanerpes chrysauchen,,porch,CR-P,29 Apr 2026,L64365840,S329595590,,1
+132,8473,species,Gray Hawk,Buteo plagiatus,,porch,CR-P,29 Apr 2026,L64365840,S329587590,,1
+133,10894,species,Fiery-billed Aracari,Pteroglossus frantzii,,breakfast,CR-SJ,27 Apr 2026,L64146043,S328432375,,1
+134,34442,species,Flame-colored Tanager,Piranga bidentata,,walking,CR-SJ,27 Apr 2026,L64187678,S328648265,,1
+135,7921,species,Swallow-tailed Kite,Elanoides forficatus,,walking,CR-SJ,27 Apr 2026,L64190676,S328664227,,1
+136,10836,species,Northern Emerald-Toucanet,Aulacorhynchus prasinus,,millar de aves,CR-C,26 Apr 2026,L63995397,S327652209,,1
+137,34066,species,Tropical Parula,Setophaga pitiayumi,,camino,CR-C,25 Apr 2026,L63874547,S327098071,,1
+138,11146,species,Acorn Woodpecker,Melanerpes formicivorus,,camino,CR-C,25 Apr 2026,L63874547,S327097328,,1
+139,33158,species,Rufous-collared Sparrow,Zonotrichia capensis,,middle,CR-C,24 Apr 2026,L63801272,S326737726,,1
+140,4260,species,Green Hermit,Phaethornis guy,,el copal,CR-C,23 Apr 2026,L63585098,S325915776,,1
+141,35088,species,Bay-headed Tanager,Tangara gyrola,,el copal,CR-C,22 Apr 2026,L63585098,S325722977,,1
+142,34800,species,Scarlet-rumped Tanager,Ramphocelus passerinii,,el copal,CR-C,22 Apr 2026,L63585098,S325609311,,1
+143,5005,species,Snowcap,Microchera albocoronata,,el copal,CR-C,22 Apr 2026,L63585098,S325595673,,1
+144,4357,species,Brown Violetear,Colibri delphinae,,el copal,CR-C,22 Apr 2026,L63585098,S325604131,,1
+145,884,species,Crested Guan,Penelope purpurascens,,el copal,CR-C,22 Apr 2026,L63585098,S325702109,,1
+146,17452,species,Tropical Kingbird,Tyrannus melancholicus,,bird,CR-C,21 Apr 2026,L63438946,S325032021,,1
+147,11962,species,Crested Caracara,Caracara plancus,,in tree,CR-C,21 Apr 2026,L63517721,S325246247,,1
+148,35022,species,Golden-hooded Tanager,Stilpnia larvata,,bird,CR-C,20 Apr 2026,L63438946,S324855656,,1
+149,34933,species,Blue-gray Tanager,Thraupis episcopus,,bird,CR-C,20 Apr 2026,L63396723,S324662135,,1
+150,17392,species,Social Flycatcher,Myiozetetes similis,,bird,CR-C,20 Apr 2026,L63396723,S324663641,,1
+151,7724,species,Western Cattle-Egret,Ardea ibis,,bird,CR-C,20 Apr 2026,L63396723,S324653373,,1
+152,10885,species,Collared Aracari,Pteroglossus torquatus,,trail,CR-C,20 Apr 2026,L63390035,S324616934,,1
+153,33864,species,Great-tailed Grackle,Quiscalus mexicanus,,tree,CR-L,17 Apr 2026,L63083624,S323177838,,1
+154,33632,species,Montezuma Oropendola,Psarocolius montezuma,,tree,CR-L,17 Apr 2026,L63083624,S323177100,,1
+155,17368,species,Great Kiskadee,Pitangus sulphuratus,,tree,CR-L,17 Apr 2026,L63083624,S323177271,,1
+156,5111,species,Rufous-tailed Hummingbird,Amazilia tzacatl,,toican,CR-A,12 Apr 2026,L62555596,S320817304,,1
+157,10936,species,Keel-billed Toucan,Ramphastos sulfuratus,,toican,CR-A,11 Apr 2026,L62555596,S320404817,,1
+158,10926,species,Yellow-throated Toucan,Ramphastos ambiguus,,toucan!!,CR-A,11 Apr 2026,L62542066,S320342040,,1
+159,9857,species,Lesson's Motmot,Momotus lessonii,,motmot,SV-SA,01 Apr 2026,L63589443,S325616564,,1
+160,13145,species,Military Macaw,Ara militaris,,mexico,MX-NLE,17 Jan 2026,L57341065,S294792961,,1
+161,7832,species,Osprey,Pandion haliaetus,,fairbanksish,US-AK,12 Jul 2025,L49658556,S259300806,,1
+162,32674,species,Snow Bunting,Plectrophenax nivalis,,aurora hotel,US-AK,06 Jul 2025,L49254764,S257583883,,1
+163,331,species,Cackling Goose,Branta hutchinsii,,aurora hotel,US-AK,06 Jul 2025,L49254764,S257591583,,1
+164,287,species,Greater White-fronted Goose,Anser albifrons,,prudhoe bay,US-AK,06 Jul 2025,L49172430,S257590815,,1
+165,5697,species,Sandhill Crane,Antigone canadensis,,walk,US-AK,06 Jul 2025,L49259872,S257604388,,1
+166,673,species,Ring-necked Duck,Aythya collaris,,walk,US-AK,06 Jul 2025,L49259872,S257602210,,1
+167,384,species,Tundra Swan,Cygnus columbianus,,pond,US-AK,05 Jul 2025,L49173500,S257235799,,1
+168,32664,species,Lapland Longspur,Calcarius lapponicus,,prudhoe bay,US-AK,05 Jul 2025,L49172430,S257232110,,1
+169,6232,species,Semipalmated Sandpiper,Calidris pusilla,,water,US-AK,05 Jul 2025,L49175120,S257241242,,1
+170,33124,species,Dark-eyed Junco,Junco hyemalis,,tinton,US-SD,03 Jun 2025,L46761070,S246414436,,1
+171,6057,species,Short-billed Dowitcher,Limnodromus griseus,,"San Diego, California, US",US-CA,03 Dec 2022,L21703495,S123393788,,1
+172,5941,species,Snowy Plover,Anarhynchus nivosus,,"San Diego, California, US",US-CA,03 Dec 2022,L21703495,S123393644,,1
+173,6528,species,Western Gull,Larus occidentalis,,la jolla,US-CA,26 Nov 2022,L21639907,S123019111,,1
+174,7792,species,Brown Pelican,Pelecanus occidentalis,,seal rock,US-CA,25 Nov 2022,L21638120,S123009594,,1
+175,7424,species,Double-crested Cormorant,Nannopterum auritum,,seal rock,US-CA,25 Nov 2022,L21638120,S123009479,,1
+176,7389,species,Brandt's Cormorant,Urile penicillatus,,seal rock,US-CA,25 Nov 2022,L21638120,S123012544,,1
+177,6011,species,Hudsonian Whimbrel,Numenius hudsonicus,,torrey pines,US-CA,25 Nov 2022,L21637532,S123006430,,1
