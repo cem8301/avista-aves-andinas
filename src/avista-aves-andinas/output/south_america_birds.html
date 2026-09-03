@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8753f338df4491c27cf09a4458d349cf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    <style>.custom-legend {
+    position: fixed;
+    top: 8px; right: 8px; z-index: 9999;
+    background: white; 
+    padding: 6px 10px;
+    border-radius: 6px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif; 
+    font-size: 10px;
+    width: 180px;
+    max-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.custom-legend h4 { 
+    margin: 0; 
+    font-size: 11px; 
+    border-bottom: 1px solid #ddd; 
+    padding-bottom: 3px; 
+    flex-shrink: 0;
+}
+.legend-scroll-container {
+    overflow-y: auto;
+    flex-grow: 1;
+    padding-right: 2px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+.scroll-btn {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 3px;
+    font-size: 9px;
+    font-weight: bold;
+    color: #444;
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+    flex-shrink: 0;
+}
+.scroll-btn:active {
+    background-color: #e0e0e0;
+}
+.category-header { 
+    font-weight: bold; 
+    margin-top: 5px;
+    margin-bottom: 2px; 
+    color: #222; 
+    text-transform: uppercase; 
+    font-size: 9px;
+    letter-spacing: 0.3px;
+}
+.layer-item { 
+    margin-left: 4px; 
+    margin-bottom: 1px;
+    display: flex; 
+    align-items: center; 
+    padding: 1px 0;
+}
+.layer-item input { 
+    margin-right: 5px; 
+    cursor: pointer; 
+    width: 12px;
+    height: 12px;
+}
+.layer-item label { 
+    cursor: pointer; 
+    color: #444; 
+    user-select: none; 
+    line-height: 12px;
+}</style><div class="custom-legend">
+    <h4>Map Layers</h4>
+
+    <button class="scroll-btn" onclick="scrollLegend(-100)">
+        ▲ Scroll Up
+    </button>
+
+    <div id="legendContainer" class="legend-scroll-container">
+        <div class="category-header">argentina - endemic</div>
+                <div class="layer-item">
+                    <input
+                        type="radio"
+                        id="heatmap_layer_0"
+                        name="global-layers"
+                        onchange="toggleGlobalLayer('feature_group_28dfc5680620d07ee426d2ea8106480d')"
+                    >
+                    <label for="heatmap_layer_0">White-headed Steamer-Duck</label>
+                </div>
+                
+                <div class="layer-item">
+                    <input
+                        type="radio"
+                        id="heatmap_layer_1"
+                        name="global-layers"
+                        onchange="toggleGlobalLayer('feature_group_057373276a10d35038212c32b879cff5')"
+                    >
+                    <label for="heatmap_layer_1">Hooded Grebe</label>
+                </div>
+                
+                <div class="layer-item">
+                    <input
+                        type="radio"
+                        id="heatmap_layer_2"
+                        name="global-layers"
+                        onchange="toggleGlobalLayer('feature_group_f58546e73dc33e2603bc21be33a2ab4c')"
+                    >
+                    <label for="heatmap_layer_2">Bare-eyed Ground Dove</label>
+                </div>
+                
+    </div>
+
+    <button class="scroll-btn" onclick="scrollLegend(100)">
+        ▼ Scroll Down
+    </button>
+</div><script>var totalLayers = ["feature_group_28dfc5680620d07ee426d2ea8106480d", "feature_group_057373276a10d35038212c32b879cff5", "feature_group_f58546e73dc33e2603bc21be33a2ab4c"];
+
+function scrollLegend(amount) {
+    var container = document.getElementById('legendContainer');
+
+    if (container) {
+        container.scrollTop += amount;
+    }
+}
+
+function toggleGlobalLayer(targetLayerName) {
+    var targetMap = window["map_8753f338df4491c27cf09a4458d349cf"];
+
+    if (targetMap) {
+        totalLayers.forEach(function(layerName) {
+            var layerObj = window[layerName];
+
+            if (layerObj && targetMap.hasLayer(layerObj)) {
+                targetMap.removeLayer(layerObj);
+            }
+        });
+
+        var activeLayerObj = window[targetLayerName];
+
+        if (activeLayerObj) {
+            targetMap.addLayer(activeLayerObj);
+        }
+    }
+}</script>
+    
+            <div class="folium-map" id="map_8753f338df4491c27cf09a4458d349cf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8753f338df4491c27cf09a4458d349cf = L.map(
+                "map_8753f338df4491c27cf09a4458d349cf",
+                {
+                    center: [-16.5881759, -68.1126645],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+  "control": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7da9a36a4b99a86cb48a389044136065 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_7da9a36a4b99a86cb48a389044136065.addTo(map_8753f338df4491c27cf09a4458d349cf);
+        
+    
+            var feature_group_28dfc5680620d07ee426d2ea8106480d = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var heat_map_5c065d74df1ba7547879c93cff6f4946 = L.heatLayer(
+                [[-45.192054, -66.400157]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_5c065d74df1ba7547879c93cff6f4946.addTo(feature_group_28dfc5680620d07ee426d2ea8106480d);
+        
+    
+            var feature_group_057373276a10d35038212c32b879cff5 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var heat_map_6dc255fd9f70d62624d095c890850639 = L.heatLayer(
+                [[-47.430157, -71.73314]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_6dc255fd9f70d62624d095c890850639.addTo(feature_group_057373276a10d35038212c32b879cff5);
+        
+    
+            var feature_group_f58546e73dc33e2603bc21be33a2ab4c = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var heat_map_7b8ec75dd393fa2662d77b4b352e2210 = L.heatLayer(
+                [[-26.725344, -65.719337]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_7b8ec75dd393fa2662d77b4b352e2210.addTo(feature_group_f58546e73dc33e2603bc21be33a2ab4c);
+        
+</script>
+</html>

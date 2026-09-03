@@ -32,9 +32,9 @@ class AvistaAvesAndinas:
         if gpx:
             self.gpx_file_path = \
                 self.pwd / 'supporting_data' / gpx
+            self.add_gpx()
 
     def run(self, output_name='birds'):
-        self.add_gpx()
         self.get_data()
         self.add_data_layers()
         self.add_custom_legend()
@@ -210,9 +210,9 @@ class AvistaAvesAndinas:
    
 if __name__ == "__main__":
     AAA = AvistaAvesAndinas(
-        config_file='colombia_config.ini',
+        config_file='south_america_config.ini',
         limit_bird_sightings=1,
         limit_output=3
         )
-    AAA.run(output_name='colombia_birds_test')
+    AAA.run(output_name='south_america_birds')
         
