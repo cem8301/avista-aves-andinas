@@ -36,6 +36,7 @@ class AvistaAvesAndinas:
     def run(self, output_name='birds'):
         self.get_data()
         self.add_data_layers()
+        self.add_summary_layer()
         self.add_custom_legend()
         output_path = \
             self.pwd / 'output' / f'{output_name}.html'
@@ -73,7 +74,22 @@ class AvistaAvesAndinas:
                 scientific_name)
             self.bird_locations_dict[feature_group
                 ][common_name] = points
-            
+    
+    def add_summary_layer(self):
+        heat_name = 'summary'
+        coords = self._get_heatmap_coords(
+            grid_size=0.15)
+        layer_id = f"heatmap_layer_{self.layer_index}"
+        heatmap_layer = folium.FeatureGroup(
+            name=heat_name, show=True)
+        HeatMap(coords, radius=12, blur=8
+            ).add_to(heatmap_layer)
+        heatmap_layer.add_to(self.map)
+        self.layer_mapping[heat_name] = {
+            "id": layer_id,
+            "obj_ref": heatmap_layer.get_name()}
+        self.layer_index += 1        
+                            
     def add_data_layers(self):
         for cat_name, sub_dict in \
             self.bird_locations_dict.items():
@@ -102,6 +118,17 @@ class AvistaAvesAndinas:
             css_styles + legend_html + js_script))               
     def get_custom_legend(self):
         legend_items = ""
+        layer_info = self.layer_mapping["summary"]
+        legend_items = f"""
+        <div class="layer-item">
+            <input type="radio"
+                   id="{layer_info['id']}"
+                   name="global-layers"
+                   onchange="toggleGlobalLayer('{layer_info['obj_ref']}' )"
+                   checked>
+            <label for="{layer_info['id']}">Summary</label>
+        </div>
+        """
         for cat_name, sub_dict in self.bird_locations_dict.items():
             legend_items += (
                 f'<div class="category-header">{cat_name}</div>'
@@ -199,12 +226,27 @@ class AvistaAvesAndinas:
             self.pwd / 'templates' / filename
         with open(template_path) as file:
             return file.read()
+            
+    def _get_heatmap_coords(self, grid_size=0.1):
+        coords = [coord for locations in
+            self.bird_locations_dict.values()
+            for coords in locations.values()
+            for coord in coords]
+        return list({(round(lat / grid_size),
+            round(lon / grid_size)): (lat, lon)
+            for lat, lon in coords}.values())
    
 if __name__ == "__main__":
     AAA = AvistaAvesAndinas(
-        config_file='south_america_config.ini',
-        limit_bird_sightings=1,
-        limit_output=3
+        config_file='colombia_config.ini',
+        #limit_bird_sightings=1,
+        #limit_output=3
         )
-    AAA.run(output_name='south_america_birds')
+    AAA.run(output_name='colombia_birds')
+    #AAA = AvistaAvesAndinas(
+#        config_file='south_america_config.ini',
+#        limit_bird_sightings=1,
+#        limit_output=3
+#        )
+#    AAA.run(output_name='south_america_birds')
         
