@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_8753f338df4491c27cf09a4458d349cf {
+                #map_8d03e282538d6ac29d246cb9b1fa0154 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -140,7 +140,7 @@
                         type="radio"
                         id="heatmap_layer_0"
                         name="global-layers"
-                        onchange="toggleGlobalLayer('feature_group_28dfc5680620d07ee426d2ea8106480d')"
+                        onchange="toggleGlobalLayer('feature_group_8ded7c7af84a9ea73d63659d2ca0523c')"
                     >
                     <label for="heatmap_layer_0">White-headed Steamer-Duck</label>
                 </div>
@@ -150,7 +150,7 @@
                         type="radio"
                         id="heatmap_layer_1"
                         name="global-layers"
-                        onchange="toggleGlobalLayer('feature_group_057373276a10d35038212c32b879cff5')"
+                        onchange="toggleGlobalLayer('feature_group_f0025a0954c90b28a912aab5b616064b')"
                     >
                     <label for="heatmap_layer_1">Hooded Grebe</label>
                 </div>
@@ -160,7 +160,7 @@
                         type="radio"
                         id="heatmap_layer_2"
                         name="global-layers"
-                        onchange="toggleGlobalLayer('feature_group_f58546e73dc33e2603bc21be33a2ab4c')"
+                        onchange="toggleGlobalLayer('feature_group_d6283ec685e8613e975b7b431bd92d4e')"
                     >
                     <label for="heatmap_layer_2">Bare-eyed Ground Dove</label>
                 </div>
@@ -170,7 +170,7 @@
     <button class="scroll-btn" onclick="scrollLegend(100)">
         ▼ Scroll Down
     </button>
-</div><script>var totalLayers = ["feature_group_28dfc5680620d07ee426d2ea8106480d", "feature_group_057373276a10d35038212c32b879cff5", "feature_group_f58546e73dc33e2603bc21be33a2ab4c"];
+</div><script>var totalLayers = ["feature_group_8ded7c7af84a9ea73d63659d2ca0523c", "feature_group_f0025a0954c90b28a912aab5b616064b", "feature_group_d6283ec685e8613e975b7b431bd92d4e"];
 
 function scrollLegend(amount) {
     var container = document.getElementById('legendContainer');
@@ -181,7 +181,7 @@ function scrollLegend(amount) {
 }
 
 function toggleGlobalLayer(targetLayerName) {
-    var targetMap = window["map_8753f338df4491c27cf09a4458d349cf"];
+    var targetMap = window["map_8d03e282538d6ac29d246cb9b1fa0154"];
 
     if (targetMap) {
         totalLayers.forEach(function(layerName) {
@@ -200,14 +200,14 @@ function toggleGlobalLayer(targetLayerName) {
     }
 }</script>
     
-            <div class="folium-map" id="map_8753f338df4491c27cf09a4458d349cf" ></div>
+            <div class="folium-map" id="map_8d03e282538d6ac29d246cb9b1fa0154" ></div>
         
 </body>
 <script>
     
     
-            var map_8753f338df4491c27cf09a4458d349cf = L.map(
-                "map_8753f338df4491c27cf09a4458d349cf",
+            var map_8d03e282538d6ac29d246cb9b1fa0154 = L.map(
+                "map_8d03e282538d6ac29d246cb9b1fa0154",
                 {
                     center: [-16.5881759, -68.1126645],
                     crs: L.CRS.EPSG3857,
@@ -225,7 +225,7 @@ function toggleGlobalLayer(targetLayerName) {
 
         
     
-            var tile_layer_7da9a36a4b99a86cb48a389044136065 = L.tileLayer(
+            var tile_layer_fa0a7a85f266052fae57d7490a6e13e8 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -242,16 +242,16 @@ function toggleGlobalLayer(targetLayerName) {
             );
         
     
-            tile_layer_7da9a36a4b99a86cb48a389044136065.addTo(map_8753f338df4491c27cf09a4458d349cf);
+            tile_layer_fa0a7a85f266052fae57d7490a6e13e8.addTo(map_8d03e282538d6ac29d246cb9b1fa0154);
         
     
-            var feature_group_28dfc5680620d07ee426d2ea8106480d = L.featureGroup(
+            var feature_group_8ded7c7af84a9ea73d63659d2ca0523c = L.featureGroup(
                 {
 }
             );
         
     
-            var heat_map_5c065d74df1ba7547879c93cff6f4946 = L.heatLayer(
+            var heat_map_300a7def769053b9e5c43f4eb3eaa2e8 = L.heatLayer(
                 [[-45.192054, -66.400157]],
                 {
   "minOpacity": 0.5,
@@ -262,16 +262,16 @@ function toggleGlobalLayer(targetLayerName) {
             );
         
     
-            heat_map_5c065d74df1ba7547879c93cff6f4946.addTo(feature_group_28dfc5680620d07ee426d2ea8106480d);
+            heat_map_300a7def769053b9e5c43f4eb3eaa2e8.addTo(feature_group_8ded7c7af84a9ea73d63659d2ca0523c);
         
     
-            var feature_group_057373276a10d35038212c32b879cff5 = L.featureGroup(
+            var feature_group_f0025a0954c90b28a912aab5b616064b = L.featureGroup(
                 {
 }
             );
         
     
-            var heat_map_6dc255fd9f70d62624d095c890850639 = L.heatLayer(
+            var heat_map_7c28c88788be3468725a4b5755e8a267 = L.heatLayer(
                 [[-47.430157, -71.73314]],
                 {
   "minOpacity": 0.5,
@@ -282,16 +282,16 @@ function toggleGlobalLayer(targetLayerName) {
             );
         
     
-            heat_map_6dc255fd9f70d62624d095c890850639.addTo(feature_group_057373276a10d35038212c32b879cff5);
+            heat_map_7c28c88788be3468725a4b5755e8a267.addTo(feature_group_f0025a0954c90b28a912aab5b616064b);
         
     
-            var feature_group_f58546e73dc33e2603bc21be33a2ab4c = L.featureGroup(
+            var feature_group_d6283ec685e8613e975b7b431bd92d4e = L.featureGroup(
                 {
 }
             );
         
     
-            var heat_map_7b8ec75dd393fa2662d77b4b352e2210 = L.heatLayer(
+            var heat_map_273054c5ec8db4fb9de67fe8aca92127 = L.heatLayer(
                 [[-26.725344, -65.719337]],
                 {
   "minOpacity": 0.5,
@@ -302,7 +302,7 @@ function toggleGlobalLayer(targetLayerName) {
             );
         
     
-            heat_map_7b8ec75dd393fa2662d77b4b352e2210.addTo(feature_group_f58546e73dc33e2603bc21be33a2ab4c);
+            heat_map_273054c5ec8db4fb9de67fe8aca92127.addTo(feature_group_d6283ec685e8613e975b7b431bd92d4e);
         
 </script>
 </html>

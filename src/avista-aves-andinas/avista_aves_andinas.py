@@ -8,7 +8,6 @@ from folium.plugins import HeatMap
 import gpxpy
 import pandas as pd
 from pygbif import occurrences as occ
-from pygbif import species
 
 
 class AvistaAvesAndinas:
@@ -33,7 +32,7 @@ class AvistaAvesAndinas:
             self.gpx_file_path = \
                 self.pwd / 'supporting_data' / gpx
             self.add_gpx()
-
+            
     def run(self, output_name='birds'):
         self.get_data()
         self.add_data_layers()
@@ -60,7 +59,7 @@ class AvistaAvesAndinas:
             color="blue",
             weight=4,
             opacity=0.8).add_to(self.map)
-     
+            
     def get_data(self):
         print(f'Fetching {len(self.birds_dict)} '
             'bird entries')
@@ -186,15 +185,8 @@ class AvistaAvesAndinas:
         
     def _get_bird_occurrences(self,
         scientific_name: str) -> list[tuple]:
-        taxon_info = species.name_backbone(
-            scientificName=scientific_name,
-            kingdom='animals')
-        taxon_key = taxon_info.get(
-            'usage', {}).get('key')
-        if not taxon_key:
-            return []
         raw_data = occ.search(
-            taxonKey=taxon_key,
+            scientificName=scientific_name,
             hasCoordinate=True,
             limit=self.limit_bird_sightings)
         return [(observation['decimalLatitude'],
