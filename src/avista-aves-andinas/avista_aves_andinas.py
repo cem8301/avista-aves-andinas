@@ -2,14 +2,12 @@
 import configparser
 import json
 from pathlib import Path
-import requests
 
 import folium
 from folium.plugins import HeatMap
 import gpxpy
 import pandas as pd
 from pygbif import occurrences as occ
-from pygbif import species
 
 
 class AvistaAvesAndinas:
